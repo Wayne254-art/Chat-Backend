@@ -14,7 +14,8 @@ import { app, server } from "./socket/socket.js";
 dotenv.config();
 
 app.use(cors({ 
-	origin: "http://localhost:3000",  // Allow requests from your frontend
+	// origin: "http://localhost:3000",  // Allow requests from your frontend
+	origin: "https://chatme-26916.web.app",  // Allow requests from your frontend
 	methods: "GET,POST,PUT,DELETE",   // Allowed methods
 	credentials: true                 // Allow cookies & authentication headers
   }));
