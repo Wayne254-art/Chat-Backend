@@ -14,13 +14,13 @@ import { app, server } from "./socket/socket.js";
 dotenv.config();
 
 app.use(cors({
-	origin: "http://localhost:3000",
-	// origin: "https://chatme-26916.web.app", 
+	// origin: "http://localhost:3000",
+	origin: "https://chatme-26916.web.app", 
 	methods: "GET,POST,PUT,DELETE",
 	credentials: true
 }));
 
-const __dirname = path.resolve();
+// const __dirname = path.resolve();
 // PORT should be assigned after calling dotenv.config() because we need to access the env variables. Didn't realize while recording the video. Sorry for the confusion.
 const PORT = process.env.PORT || 8080;
 
